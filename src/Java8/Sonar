@@ -1,0 +1,55 @@
+TLDR: Software testing, including both dynamic and static methods, is crucial for high-quality code, satisfied customers, decreased maintenance costs, and secure code, and tools like Sonarqube can help detect errors and enforce best coding practices.
+
+1. 00:00 👨‍💻 Software testing is crucial for high-quality code, satisfied customers, decreased maintenance costs, and secure code, with different methods and levels available.
+	1.1 Sonarqube is a software testing tool that improves code quality and detects errors early in development.
+	1.2 Software testing ensures high quality code with no bugs or logical errors before deployment.
+	1.3 Testing is crucial for high-quality software, satisfied customers, decreased maintenance costs, and secure code.
+	1.4 Software testing can be classified into manual and automatic testing, with different testing methods such as black box, white box, and grey box testing, and testing levels including unit, integration, system, and acceptance testing, while dynamic testing occurs during code execution and can identify subtle defects or vulnerabilities.
+
+2. 04:21 💻 Dynamic testing is better than static testing in finding errors related to integration with external services, and both types of testing are used in software testing.
+	2.1 Developers write code, which is tested in a separate environment to ensure it runs smoothly and integrates with other services before being deployed.
+	2.2 Dynamic testing is better than static testing in finding errors related to integration with external services, and both types of testing are used in software testing, with examples of dynamic testing tools being Selenium, Catalan, and Casper Js.
+	2.3 Static code analysis is a method of debugging that analyzes the code against a set of predefined rules while it is being written, providing developers with comprehensive analysis and error notifications.
+
+3. 07:49 🔍 Static code analysis tools like Sonarqube help detect errors and enforce best coding practices, making it easier and cheaper to fix issues early in development.
+	3.1 Static code analysis tools like Sonarqube help find errors early in development and detect over complexity in code, making it easier and cheaper to fix them.
+	3.2 Static code analysis tools help identify security errors and enforce best coding practices, even for specific coding languages, by suggesting simplified methods and reporting issues for developers to fix.
+	3.3 Integrate static testing tool with Jenkins to automate code testing and avoid wasting time.
+	3.4 Customizable project-specific rules can be configured using a tool to identify and raise issues if not followed, with the ability to customize rules for each project and different kinds of rules for different teams or companies.
+
+4. 11:44 👨‍💻 Choosing an easy solution over a complex one may result in technical debt, causing more time and cost spent on fixing issues in the future.
+	4.1 Learn about static testing tools like Coverity and Pycharm, and understand technical debt to solve software testing issues and avoid additional rework caused by choosing an easy but inefficient solution.
+	4.2 Choosing an easy solution over a complex one may save time initially, but it may not allow for future expansion and scalability.
+	4.3 Technical debt is the cost of choosing an easy solution over a complex one, resulting in more time, energy, and cost spent on fixing issues in the future.
+	4.4 Sonarqube is an open source static code analysis tool that identifies errors and potential bugs, manages source code quality, and suggests solutions for inefficiencies and excess complexity in 25 different programming languages.
+
+5. 15:41 👃 Code smells can lead to future problems and security vulnerabilities, but SonarQube can help identify errors and enforce standard rules in development.
+	5.1 Sonic u code smells can identify potential problems in code that may arise in the future due to not following best practices.
+	5.2 Code smells can sometimes be necessary, but they can also lead to security vulnerabilities such as leaving a SQL database open or including usernames and passwords directly in the code.
+	5.3 Create and maintain quality profiles in SonarQube to identify errors early in development and enforce standard rules specific to different projects.
+	5.4 SonarCube is an automated code analysis tool that identifies errors, code smells, and technical depth in the program, and can be integrated with deployment or integration tools to monitor the health of the program.
+
+6. 19:31 👨‍💻 Use Solar tube, Sonikku, and Sonarqube to analyze and detect errors, bugs, and security problems in code, and launch an instance on Amazon for access.
+	6.1 Solar tube can be integrated with Github through an API or web hook to analyze errors in all branches of the code.
+	6.2 Sonikku can detect memory leaks and provide a visual overview of the code's health, allowing for the creation of a performance report to identify bugs.
+	6.3 Sonarqube can detect technical issues, code smells, and security problems and enforce quality gates based on customized requirements and practices, allowing for easy identification and resolution of problematic code.
+	6.4 Sonarqube has a plugin called SonarLint that integrates with IDEs, eliminating the need to install the entire Sonarqube package, and the installation process involves installing Docker and pulling the latest Sonarqube image.
+	6.5 Launch an instance on Amazon using t2 dark medium with at least 2 GB of RAM, configure security details, select a key pair, and use putty to access the instance.
+
+7. 24:46 💻 Install Docker and SonarQube, clone a sample project, generate a token, and install Maven to execute your project.
+	7.1 To install Docker via Centaurs, go to the Docker website, click on explore, select Docker Enterprise Center, and start a one-month free trial, then download the necessary files and use the obligate command to install as root.
+	7.2 Use W get command to download files, copy link address and paste it, install packages using yum install container riding, and start docker using systemctl start docker.
+	7.3 Install and run SonarQube using Docker by pulling the latest image from the remote repository, installing it, and starting the container with the port number 9000.
+	7.4 Install git and clone a sample project to see how Soniku works, then set up Sonarqube and create a new project.
+	7.5 Generate a token to identify yourself and revoke it at any time, choose your main language and build tool, and install Maven to execute your project.
+	7.6 Install Apache Maven by duplicating the link address into the opt folder and navigating to the Apache Maven folder.
+
+8. 34:19 🔍 Use Sonarqube to analyze and improve the health of your project's code.
+	8.1 Install Java and set the environment variable to use Maven for compiling a sample project.
+	8.2 Set metadata in project dot properties file to configure project details and compile successfully using "mvn compile" command.
+	8.3 Sonar Cube provides an overview of a project's health, including bugs, vulnerabilities, technical debt, code smells, and duplication, and allows for further analysis using various programming languages.
+	8.4 The tool allows for direct analysis of code issues, including unused imports and code smells, with a graphical representation of bugs, reliability, security, maintainability, and more.
+	8.5 Sonarqube is a well-administered build tool that allows users to set quality profiles and create their own quality gates for their projects.
+
+
+Summary for https://youtu.be/31igoWxauEQ
