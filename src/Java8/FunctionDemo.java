@@ -1,10 +1,25 @@
 package Java8;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Random;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class FunctionDemo {
+    static String randNum(int n){
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            int x = (int)(Math.random()*10);
+            sb.append(x);
+        }
+        return sb.toString();
+
+
+    }
+
     public static void main(String[] args) {
         Function<Integer,Integer> f = i->i*i;
         System.out.println(f.apply(5));
@@ -39,5 +54,32 @@ public class FunctionDemo {
         Function<Integer,Integer> f4 = i->i*i*i;
         System.out.println(f3.andThen(f4).apply(2)); //f3 output given as inp to f4 and result is produced
         System.out.println(f3.compose(f4).apply(2)); //f4 output given as inp to f3 and result is produced
+
+        Consumer<String> c = s-> System.out.println(s);
+        c.accept("vasanth");
+
+        Consumer<Student> c1 = s-> System.out.println("Student Name:"+s.name+" "+"Student Marks: "+s.marks
+        +" "+"Student Grade: "+std.apply(s));
+
+        for (Student s1: al
+             ) {
+            c1.accept(s1);
+
+        }
+
+        Supplier<Date> d = ()->new Date();
+        System.out.println(d.get());
+        System.out.println(randNum(6));
+        Supplier<String> s = ()->{StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < 6; i++) {
+                int x = (int)(Math.random()*10);
+                sb.append(x);
+            }
+            return sb.toString();};
+        System.out.println(s.get());
+        Random r = new Random();
+        System.out.println(r.nextInt(10));
+
+
     }
 }

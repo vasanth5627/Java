@@ -24,6 +24,9 @@ public class Main implements Intef1,Interf4{
         Interf4.m4();
         int x = m.m5();
         System.out.println(x);
+        Intef1 i = new Main();
+
+
 
 
     }

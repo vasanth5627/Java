@@ -1,5 +1,6 @@
 package Java8;
 
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 public class PredicateDemo {
@@ -16,5 +17,8 @@ public class PredicateDemo {
             System.out.print(s.test(st)+" "+st+" ");
         }
         System.out.println();
+
+        BiPredicate<Integer,Integer> bp = (a,b)->(a+b)%2==0;
+        System.out.println(bp.test(21,10));
     }
 }
