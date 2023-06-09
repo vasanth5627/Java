@@ -1,9 +1,7 @@
 package OOPS.Serilization;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
+import java.util.Arrays;
 
 public class Serial {
     public static void main(String[] args) throws IOException {
@@ -15,6 +13,14 @@ public class Serial {
         FileOutputStream fos = new FileOutputStream("/Users/vasanthkumar/IdeaProjects/FirstProject/src/OOPS/Serilization/obj.txt");
 
         ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ObjectOutputStream oos1 = new ObjectOutputStream(baos);
+        oos1.writeObject(s);
+        baos.close();
+        oos1.close();
+        byte[] data = baos.toByteArray();
+        System.out.println(Arrays.toString(data));
 
         //how to seriliaze
 

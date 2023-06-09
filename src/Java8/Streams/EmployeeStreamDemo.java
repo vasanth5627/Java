@@ -53,6 +53,7 @@ public class EmployeeStreamDemo {
 
         //list of departments
         List<String> departments = EmpList.stream().map(e->e.department).distinct().collect(Collectors.toList());
+        System.out.println("List "+EmpList.stream().collect(Collectors.groupingBy(e->e.department,Collectors.toList())));
         System.out.println(departments);
 
         //average age of male and female

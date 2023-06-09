@@ -1,0 +1,6 @@
+If we want add new features to our current feature then we can wrap one feature on top of another
+we use decorative pattern , to avoid class exclusion
+ex: we create a base pizza / base car
+we add decorations on top of it.
+
+decorative is both has-a and is-a

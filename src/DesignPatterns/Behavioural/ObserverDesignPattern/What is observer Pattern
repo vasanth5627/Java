@@ -1,0 +1,11 @@
+Consider a e-commerce website, it has a product which is Out of stock and customers clicks on
+notify me , once the product is in-stock we should notify everyone who opted for that feature.
+
+there will be 2 objects
+1) Observable - one
+2)Observer - multiple
+
+if the state changes of Observable, there could be multiple observer, it should notify all the observers
+
+observable has a (relationship)(0-*) observer.
+
