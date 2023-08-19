@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static String  multiply1(String num1 ,  String num2){
         int i= num1.length()-1;
@@ -62,11 +64,90 @@ public class Main {
         return ans;
     }
 
-    public static void main(String[] args) {
-         String ans = multiply("15975363164662","9");
-         String ans1 = adds("52865748180","881095803");
-        System.out.println(ans);
-        System.out.println(ans1);
+    public static void main(String[] args)
+    {
+//         String ans = multiply("15975363164662","9");
+//         String ans1 = adds("52865748180","881095803");
+//        System.out.println(ans);
+//        System.out.println(ans1);
+
+//        int i=0;
+//        while(i<10){
+//            new Thread(()->{
+//                System.out.println("Hello Stranger");
+//            }).start();
+//            new Thread(()->{
+//                System.out.println("I am Vasanth Kumar");
+//            }).start();
+//
+//            new Thread(()->{
+//                System.out.println("If you need me to code , let me know");
+//            }).start();
+//
+//        //    Thread.sleep(1000);
+//            i++;
+//        }
+
+       boolean b = true;
+       //first label
+        first:
+        {
+            //second
+            second:
+            {
+                third:
+                {
+                    System.out.println("before the break statement");
+
+                    if (b)
+                        break second;
+                    System.out.println("This would not be executed");
+                }
+                System.out.println("This would not be executed");
+
+            }
+            System.out.println("This is after second block");
+        }
+
+        for (int i = 1; i <=3; i++) {
+            for (int j = 1; j <=3; j++) {
+                if(i==2 && j==2){
+                    continue;
+                }
+                System.out.println(i+" "+j);
+                
+            }
+
+            
+        }
+        System.out.println("*************************");
+
+        aa:
+        for (int i = 1; i <=3; i++) {
+            bb:
+            for (int j = 1; j <=3; j++) {
+                if(i==2 && j==2){
+                    continue bb;
+                }
+                System.out.println(i+" "+j);
+
+            }
+
+
+        }
+
+        int x =5;
+        int y=10;
+        System.out.println((y&1)==0);
+
+
+
+
+
+
+
+
+
 
     }
 }

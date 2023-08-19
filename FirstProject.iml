@@ -7,5 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="codehaus.jackson.core.asl" level="project" />
+    <orderEntry type="library" name="fasterxml.jackson.core.annotations" level="project" />
+    <orderEntry type="library" name="fasterxml.jackson.core.databind" level="project" />
+    <orderEntry type="library" name="android.tools.external.lombok.ast" level="project" />
+    <orderEntry type="library" name="jayway.jsonpath.json.path" level="project" />
   </component>
 </module>

@@ -59,6 +59,7 @@ public class Outer {
 
 class Test{
     public static void main(String[] args) {
+
         new Outer().new Inner().m1();
     }
 }
