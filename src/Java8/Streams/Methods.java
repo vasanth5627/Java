@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Methods {
+
     public static void main(String[] args) {
         //filter -> inp is predicate
 
@@ -34,7 +35,7 @@ public class Methods {
         System.out.println("Max: "+integer1);
 
 
-        //Redume
+        //Reduce
        Integer sum =  numbers.stream().reduce(0,(a,b)->a+b);
         System.out.println(sum);
 
@@ -203,6 +204,9 @@ public class Methods {
         else{
             System.out.println("Stream is empty");
         }
+
+        int val = nums.stream().reduce(0,(a,b)->a+b);
+        System.out.println(val);
 
 
 
